@@ -139,22 +139,22 @@ isTokenBlacklisted(token: string): boolean {
     //   service: 'gmail', // Use your email provider
     //   auth: {
     //     user: 'noreply06969@gmail.com', // Replace with your email
-    //     pass: '789321ms', // Replace with your email password or app password
+    //     pass: '', // Replace with your email password or app password
     //   },
     // });
 
 
 
 
-    const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com", // SMTP host
-      port: 587, // SMTP port
-      secure: false, // Use TLS
-      auth: {
-        user: 'noreply06969@gmail.com', // Your email address
-        pass: '', // Your app password
-      },
-    });
+    // const transporter = nodemailer.createTransport({
+    //   host: "", // SMTP host
+    //   port: , // SMTP port
+    //   secure: false, // Use TLS
+    //   auth: {
+    //     user: 'noreply06969@gmail.com', // Your email address
+    //     pass: '', // Your app password
+    //   },
+    // });
 
 
 
@@ -162,12 +162,12 @@ isTokenBlacklisted(token: string): boolean {
 
 
     //Send the OTP email
-    await transporter.sendMail({
-      from: 'noreply06969@gmail.com', // Sender address
-      to: email, // Receiver's email
-      subject: 'Your OTP Code', // Subject line
-      text: `Your OTP code is ${otp}. It will expire in 5 minutes.`, // Email content
-    });
+    // await transporter.sendMail({
+    //   from: 'noreply06969@gmail.com', // Sender address
+    //   to: email, // Receiver's email
+    //   subject: 'Your OTP Code', // Subject line
+    //   text: `Your OTP code is ${otp}. It will expire in 5 minutes.`, // Email content
+    // });
 
 
 
